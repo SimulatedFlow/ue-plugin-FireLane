@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"EngineVersion": "5.8.0",
+	"FriendlyName": "FireLane - Friendly Fire & Line-of-Fire Gate",
+	"Description": "The check every AI shooter needs and almost none has: is one of my own people standing in the shot? A single line trace is not enough - a bullet has width, a team-mate walks, and the answer arrives one frame late. FireLane sweeps a lane of the projectile's real radius from muzzle to target, projects every friendly forward along its own velocity so the shot is judged against where people will be, and separates a hard block from a graze so the AI is neither reckless nor mute. When the lane is blocked it does not just say no: it returns the sideways step that would clear it, so the squad moves instead of standing there. Geometry checks run on a per-frame trace budget, so sixty shooters cost what you decide they cost.",
+	"Category": "AI",
+	"CreatedBy": "Silvan Teufel",
+	"CreatedByURL": "https://silvan.teufel-engineering.com",
+	"DocsURL": "https://wiki.teufel-engineering.com/en/FireLane/documentation",
+	"SupportURL": "mailto:teufelsilvan@gmail.com",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "FireLane",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}
